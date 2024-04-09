@@ -3,6 +3,7 @@ pipeline {
 	stages{
 		stage('Instalando dependencias'){
 			steps {
+				sh 'nvm use 18.0.0'
 				sh 'npm install'
 			}
 		}
