@@ -1,6 +1,5 @@
 pipeline {
 	agent any
-	tools {nodejs '18.0.0'}
 	stages{
 		stage('Instalando dependencias'){
 			steps {
