@@ -1,10 +1,9 @@
 pipeline {
 	agent any
-	tools {nodejs '18.0.0'}
+	tools {nodejs 'nodejs'}
 	stages{
 		stage('Instalando dependencias'){
 			steps {
-				sh 'nvm use 18.0.0'
 				sh 'npm install'
 			}
 		}
